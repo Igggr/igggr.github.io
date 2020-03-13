@@ -39,8 +39,11 @@
                         </li>
                     </ul>
                     <ul class="nav ml-auto">
-                        <li class="nav-item mx-3">
-                            <a href="https://github.com/" target="_blank" class="nav-link text-white link-border-bottom">Github</a>
+                        <li class="mx-3">
+                            <a href="https://github.com/" target="_blank" class="nav-link text-white link-border-bottom">
+                                <img rel="icon" type="image/jpg" src="https://github.githubassets.com/apple-touch-icon.png" width="24px" height="24px" />
+                                Github
+                            </a>
                         </li>
                         <li class="nav-item mx-3 mr-0">
                             <a href="mailto:forjob.1987@mail.ru?subject=work proposal" class="nav-link text-white link-border-bottom">Написать мне</a>
@@ -54,7 +57,7 @@
                 <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
                     <h1 class="h1 font-weight-bold font-color-green mb-4">Привет! Меня зовут Игорь.</h1>
                     <p class="promo-text pb-3">Я ищу работу Junior backend developer-ом на Flask/Django.</p>
-                    <a href="#contact" class="btn btn-success btn-green">Написать мне</a>
+                    <a href="mailto:forjob.1987@mail.ru?subject=work proposal" class="btn btn-success">Написать мне</a>
                 </div>
             </div>
         </div>
@@ -76,43 +79,90 @@
 
     </section>
 
-    <section class="projects dark-bg pt-3 pt-sm-5 pb-3" id="projects">
+    <section class="projects dark-bg" id="projects">
         <div class="container">
             <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5">Мои работы</h2>
-            <div class="row">
-                <div class="col-12 col-sm-6 mb-5">
-                    <img src="//via.placeholder.com/540x340" alt="" class="w-100 pb-4">
-                    <p class="mb-3">Поисковик по&nbsp;турам. 3&nbsp;экрана: главная, направление, тур. При нажатии на&nbsp;заказ&nbsp;&mdash; переход в&nbsp;гугл-форму</p>
-                    <p>
-                        <a href="https://stepik-flask-demo-1.herokuapp.com/" target="_blank" class="link link-green mr-4">Смотреть проект</a>
-                        <a href="https://github.com/Igggr/fls_tour" target="_blank" class="link">Исходный код</a>
-                    </p>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner card-deck row w-100 ">
+
+                    <div class="carousel-item col-md-4 active">
+                        <div class="card">
+                            <img class="card-img-top" src="static/project1.png" alt=" Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Сервис подбора туров</h4>
+                                <p class="card-text">Flask. Фильтрация по городам вылета.</p>
+                                <div class="card-footer">
+                                    <div class="btn-group-md"> <a href="https://stepik-flask-demo-1.herokuapp.com/" target="_blank" class="btn-primary">смотреть проект</a>
+                                        <a href="https://github.com/Igggr/fls_tour" target="_blank" class="btn-success">код</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-4">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="static/project2.png" alt=" Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Сервис подбора репититоров</h4>
+                                <p class="card-text">Flask/Postgresql. После того, как заявка на занятие оставлена - время репититора помечается как занятое.</p>
+                                <div class="card-footer">
+                                    <div class="btn-group-md"> <a href="https://stepik-flask-demo-1.herokuapp.com/" target="_blank" class="btn-primary">смотреть проект</a>
+                                        <a href="https://github.com/Igggr/flsk_repetit" target="_blank" class="btn-success">код</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="carousel-item col-md-4">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="static/project3.png" alt=" Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Доставка еды</h4>
+                                <p class="card-text">Flask/Postgresql. Зарегистрировашись можно оставить заказ. Заказы и их статусы отображаются в личном кабинете</p>
+                                <div class="card-footer">
+                                    <div class="btn-group-md"> <a href="https://stepik-flask-demo-3.herokuapp.com/" target="_blank" class="btn-primary">смотреть проект</a>
+                                        <a href="https://github.com/Igggr/flsk_delivery" target="_blank" class="btn-success">код</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
                 </div>
-                <div class="col-12 col-sm-6 mb-5">
-                    <img src="//via.placeholder.com/540x340" alt="" class="w-100 pb-4">
-                    <p class="mb-3">Сервис подбора репетиторов.</p>
-                    <p>
-                        <a href="https://stepik-flask-demo-2.herokuapp.com/" target="_blank" class="link link-green mr-4">Смотреть проект</a>
-                        <a href="https://github.com/Igggr/flsk_repetit" target="_blank" class="link">Исходный код</a>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 mb-5">
-                    <img src="//via.placeholder.com/540x340" alt="" class="w-100 pb-4">
-                    <p class="mb-3">Заказ еды. Зарегистрированный пользователь может просматривать историю своих заказов. База данных - PosthreSQl</p>
-                    <p>
-                        <a href="https://stepik-flask-demo-3.herokuapp.com/" target="_blank" class="link link-green mr-4">Смотреть проект</a>
-                        <a href="https://github.com/Igggr/fls_delivery" target="_blank" class="link">Исходный код</a>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 mb-5">
-                    <img src="//via.placeholder.com/540x340" alt="" class="w-100 pb-4">
-                    <p class="mb-3">API для поиска и регистрации</p>
-                    <p>
-                        <a href="#" target="_blank" class="link link-green mr-4">Смотреть проект</a>
-                        <a href="https://github.com/Igggr/flsk_stepik_api" target="_blank" class="link">Исходный код</a>
-                    </p>
-                </div>
+
             </div>
+
+
+
+
+
+
+
+
+
+
         </div>
     </section>
 
@@ -120,7 +170,8 @@
         <h2 class="h2 font-weight-bold my-4">Мои цели</h2>
         <div class="row">
             <div class="col-12 col-sm-8 pb-1">
-                <p class="pb-2">Мои ближайшие цели: освоить Docker, применять CI. Не откладывать немецкий на завтра)))</p>
+                <p class="pb-2">Мои ближайшие цели: освоить Docker, применять CI.</p>
+                <p>Не откладывать немецкий на завтра)))</p>
             </div>
         </div>
     </section>
@@ -158,11 +209,11 @@
                 </ul>
                 <div class="row">
                     <div class="col-12 col-sm-9">
-                        <p class="d-flex justify-content-between flex-wrap">
+                        <div class="d-flex justify-content-between flex-wrap">
                             <a href="https://vk.com/write198417" class="btn btn-primary mb-3" target="_blank">Написать в ВК</a>
                             <a href="https://teleg.run/iggrSmirnov" class="btn btn-info mb-3" target="_blank">Написать в Telegram</a>
                             <a href="mailto:forjob.1987@mail.ru?subject=work proposal" class="btn btn btn-dark mb-3" target="_blank">Написать на почту</a>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
